@@ -9,13 +9,13 @@ On the other hand, set of well designed and written classes can speed up the cod
 
 ### S.O.L.I.D Class Design Principles ###
 
-- ** Single Responsibility Principle ** - One class should have one and only responsibility
-- ** Open Closed Principle - Software ** - components should be open for extension, but closed for modification
-- ** Liskov’s Substitution Principle ** - Derived types must be completely substitutable for their base types
-- ** Interface Segregation Principle ** - Clients should not be forced to implement unnecessary methods which they will not use"
-- ** Dependency Inversion Principle ** - "Depend on abstractions, not on concretions"
+** Single Responsibility Principle ** - One class should have one and only responsibility
+** Open Closed Principle - Software ** - components should be open for extension, but closed for modification
+** Liskov’s Substitution Principle ** - Derived types must be completely substitutable for their base types
+** Interface Segregation Principle ** - Clients should not be forced to implement unnecessary methods which they will not use"
+** Dependency Inversion Principle ** - "Depend on abstractions, not on concretions"
 
-Single Responsibility Principle
+### Single Responsibility Principle ###
 
 "One class should have one and only one responsibility"
 
@@ -23,7 +23,7 @@ In other words, you should write, change and maintain a class for only one purpo
 
 Similarly, If you are writing service/manager class then it should contain only that part of method calls and nothing else. Not even utility global functions related to module. Better separate them in another globally accessible class file. This will help in maintaining the class for that particular purpose, and you can decide the visibility of class to specific module only.
 
-Open Closed Principle
+### Open Closed Principle ###
 
 This is second important rule which you should keep in mind while designing your application. 
 It says: "Software components should be open for extension, but closed for modification"
