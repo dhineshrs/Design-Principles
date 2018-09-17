@@ -53,9 +53,15 @@ NO. He will have to implement both the methods, out of which one is extra burden
 
 So what is the solution? Solution is to create two interfaces by breaking the existing one. They should be like PdfReportable and ExcelReportable. This will give the flexibility to user to use only required functionality only.
 
+### Dependency Inversion Principle Example  ###
+The classical use of this principle of bean configuration in Spring framework.
 
-Revising !!!
-- Separate what changes from what Stays the Same!
+In spring framework, all modules are provided as separate components which can work together by simply injected dependencies in other module. This dependency is managed externally in XML files.
+
+These separate components are so well closed in their boundaries that we can use them in other software modules apart from spring with same ease. This has been achieved by dependency inversion and open closed principles. All modules expose only abstraction which is useful in extending the functionality or plug-in in another module.
+
+ ## Revising !!!  ##
+ - Separate what changes from what Stays the Same!
 - Classes should be open for Extension, but closed for Modification!
 - Favor Composition over Inheritance
 - Program to an interface. Not an implementation
