@@ -53,7 +53,14 @@ NO. He will have to implement both the methods, out of which one is extra burden
 
 So what is the solution? Solution is to create two interfaces by breaking the existing one. They should be like PdfReportable and ExcelReportable. This will give the flexibility to user to use only required functionality only.
 
-### Dependency Inversion Principle Example  ###
+###  Dependency Inversion Principle ### 
+Most of us are already familiar with the words used in principle’s name. DI principle says:
+
+“Depend on abstractions, not on concretions”
+
+In other words. we should design our software in such a way that various modules can be separated from each other using an abstract layer to bind them together.
+
+#### Dependency Inversion Principle Example  ####
 The classical use of this principle of bean configuration in Spring framework.
 
 In spring framework, all modules are provided as separate components which can work together by simply injected dependencies in other module. This dependency is managed externally in XML files.
