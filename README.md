@@ -9,11 +9,11 @@ On the other hand, set of well designed and written classes can speed up the cod
 
 ### S.O.L.I.D Class Design Principles ###
 
-** Single Responsibility Principle ** - One class should have one and only responsibility
-** Open Closed Principle - Software ** - components should be open for extension, but closed for modification
-** Liskov’s Substitution Principle ** - Derived types must be completely substitutable for their base types
-** Interface Segregation Principle ** - Clients should not be forced to implement unnecessary methods which they will not use"
-** Dependency Inversion Principle ** - "Depend on abstractions, not on concretions"
+- Single Responsibility Principle ** - One class should have one and only responsibility
+- Open Closed Principle - Software ** - components should be open for extension, but closed for modification
+- Liskov’s Substitution Principle ** - Derived types must be completely substitutable for their base types
+- Interface Segregation Principle ** - Clients should not be forced to implement unnecessary methods which they will not use"
+- Dependency Inversion Principle ** - "Depend on abstractions, not on concretions"
 
 ### Single Responsibility Principle ###
 
