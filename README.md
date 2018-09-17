@@ -1,4 +1,4 @@
-# Design-Principles #
+# Design Principles #
 
 ## 5 basic principles of object-oriented programming and design. ##
 
