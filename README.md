@@ -29,9 +29,30 @@ This is second important rule which you should keep in mind while designing your
 It says: "Software components should be open for extension, but closed for modification"
 
 What does it mean?? It means that your classes should be designed such a way that whenever fellow developers wants to change the flow of control in specific conditions in application, all they need to extend your class and override some functions and that’s it.
+
 If other developers are not able to design desired behavior due to constraints put by your class, then you should reconsider changing your class. I do not mean here that anybody can change the whole logic of your class, but he/she should be able to override the options provided by software in unharmful way permitted by software.
 
+### Liskov’s Substitution Principle ###
+
+This principle is a variation of previously discussed open closed principle. It says:
+
+“Derived types must be completely substitutable for their base types”
+
+It means that the classes fellow developer created by extending our class should be able to fit in application without failure. This requires the objects of your subclasses to behave in the same way as the objects of your superclass. This is mostly seen in places where we do run time type identification and then cast it to appropriate reference type.
+
 For example, if you take a look into any good framework like struts or spring, you will see that you can not change their core logic and request processing, BUT you modify the desired application flow just by extending some classes and plugin them in configuration files.
+
+### Interface Segregation Principle ###
+This principle is my favorite one. It is applicable to interfaces as single responsibility principle holds to classes. ISP says:
+
+“Clients should not be forced to implement unnecessary methods which they will not use”
+
+Take an example. Developer Alex created an interface Reportable and added two methods generateExcel() and generatedPdf(). Now client ‘A’ wants to use this interface but he intend to use reports only in PDF format and not in excel. Will he be able to use the functionality easily?
+
+NO. He will have to implement both the methods, out of which one is extra burden put on him by designer of software. Either he will implement another method or leave it blank. This is not a good design.
+
+So what is the solution? Solution is to create two interfaces by breaking the existing one. They should be like PdfReportable and ExcelReportable. This will give the flexibility to user to use only required functionality only.
+
 
 Revising !!!
 - Separate what changes from what Stays the Same!
