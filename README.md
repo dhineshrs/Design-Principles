@@ -13,3 +13,11 @@ Open Closed Principle - Software components should be open for extension, but cl
 Liskov’s Substitution Principle - Derived types must be completely substitutable for their base types
 Interface Segregation Principle - Clients should not be forced to implement unnecessary methods which they will not use"
 Dependency Inversion Principle - "Depend on abstractions, not on concretions"
+
+
+Revising !!!
+Separate what changes from what Stays the Same!
+Classes should be open for Extension, but closed for Modification!
+Favor Composition over Inheritance
+Program to an interface. Not an implementation
+Strive for Loosely Coupled Designs
